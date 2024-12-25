@@ -3,13 +3,6 @@
 
 This project is a simple webpage that displays random fun facts about scientists. Users can click a button to generate and display a new fact each time.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 To set up this project locally, follow these steps:
