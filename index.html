@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Facts</h1>
+        <button id="generateFact">Generate Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+    <script>
+        const facts = [
+            "Albert Einstein's brain was removed for study after his death and had unusual features.",
+            "Marie Curie's research notebooks are still radioactive and stored in lead-lined boxes.",
+            "Isaac Newton spent a significant amount of time studying alchemy.",
+            "Nikola Tesla had a deep affection for pigeons and cared for injured birds.",
+            "Charles Darwin was part of the 'Glutton Club' at Cambridge, eating unusual animals.",
+            "Richard Feynman was known for his safe-cracking skills during the Manhattan Project.",
+            "Ada Lovelace envisioned computers doing more than calculations, predicting their use in music and art.",
+            "Carl Sagan advocated for the legalization of marijuana under the pseudonym 'Mr. X'.",
+            "Stephen Hawking experienced zero gravity in 2007, fulfilling his dream of floating weightlessly.",
+            "Rosalind Franklin's X-ray diffraction images were crucial in discovering DNA's double-helix structure."
+        ];
+
+        document.getElementById('generateFact').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('factDisplay').textContent = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>
